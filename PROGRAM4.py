@@ -1,7 +1,9 @@
-ch = input("Please Enter Your Own Character : ")
-if((ch >= 'a' and ch <= 'z') or (ch >= 'A' and ch <= 'Z')): 
-print("The Given Character ", ch, "is an Alphabet") 
-elif(ch >= '0' and ch <= '9'):
-print("The Given Character ", ch, "is a Digit")
+print("Enter '0' for exit.");
+ch = input("Enter any character: ");
+if ch == '0':
+exit();
 else:
-print("The Given Character ", ch, "is Not an Alphabet or a Digit")
+if((ch>='a' and ch<='z') or (ch>='A' and ch<='Z')):
+print(ch, "is an alphabet.");
+else:
+print(ch, "is not an alphabet.");
