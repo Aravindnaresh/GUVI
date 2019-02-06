@@ -1,17 +1,13 @@
-num1 = 10
-num2 = 14
-num3 = 12
+a = float(input("Please Enter the First value: "))
+b = float(input("Please Enter the First value: "))
+c = float(input("Please Enter the First value: "))
 
-# uncomment following lines to take three numbers from user
-#num1 = float(input("Enter first number: "))
-#num2 = float(input("Enter second number: "))
-#num3 = float(input("Enter third number: "))
-
-if (num1 >= num2) and (num1 >= num3):
-   largest = num1
-elif (num2 >= num1) and (num2 >= num3):
-   largest = num2
+if (a > b and a > c):
+          print("{0} is Greater Than both {1} and {2}". format(a, b, c))
+elif (b > a and b > c):
+          print("{0} is Greater Than both {1} and {2}". format(b, a, c))
+elif (c > a and c > b):
+          print("{0} is Greater Than both {1} and {2}". format(c, a, b))
 else:
-   largest = num3
-
-print("The largest number between",num1,",",num2,"and",num3,"is",largest)
+          print("Either any two values or all the three values are equal")
+ANALYSIS
