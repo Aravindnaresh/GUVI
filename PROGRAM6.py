@@ -1,11 +1,11 @@
-year = int(input("Enter Year: "))
-
-# Leap Year Check
-if year % 4 == 0 and year % 100 != 0:
-    print(year, "is a Leap Year")
-elif year % 100 == 0:
-    print(year, "is not a Leap Year")
-elif year % 400 ==0:
-    print(year, "is a Leap Year")
+def leap_year(y):
+if y % 400 == 0:
+return True
+if y % 100 == 0:
+return False
+if y % 4 == 0:
+return True
 else:
-    print(year, "is not a Leap Year")
+return False
+print(leap_year(1900))
+print(leap_year(2004))
